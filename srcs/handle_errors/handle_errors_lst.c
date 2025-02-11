@@ -6,7 +6,7 @@
 /*   By: tbahin <tbahin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 03:29:42 by theo              #+#    #+#             */
-/*   Updated: 2025/02/09 12:20:23 by tbahin           ###   ########.fr       */
+/*   Updated: 2025/02/11 12:19:41 by tbahin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_check_limits(t_list *lst)
 	ptr = lst;
 	while (ptr->next)
 	{
-		if (ptr->content > 2147483647 || ptr->content < -2147483648)
+		if (ptr->content > (long)2147483647 || ptr->content < (long)-2147483648)
 			return (1);
 		ptr = ptr->next;
 	}

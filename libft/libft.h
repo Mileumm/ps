@@ -6,7 +6,7 @@
 /*   By: tbahin <tbahin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:14:11 by tbahin            #+#    #+#             */
-/*   Updated: 2025/02/09 16:29:29 by tbahin           ###   ########.fr       */
+/*   Updated: 2025/02/11 12:16:12 by tbahin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ typedef struct s_target
 
 typedef struct s_list
 {
-	int				content;
+	long			content;
 	t_target		*data;
 	struct s_list	*next;
 	struct s_list	*prev;

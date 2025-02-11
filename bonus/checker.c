@@ -6,7 +6,7 @@
 /*   By: tbahin <tbahin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/09 13:24:16 by tbahin            #+#    #+#             */
-/*   Updated: 2025/02/09 19:05:01 by tbahin           ###   ########.fr       */
+/*   Updated: 2025/02/11 12:07:35 by tbahin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,13 @@
 
 int	ft_checker(int ac, char **av, t_list **a)
 {
-	if (ft_check_args(ac, av) == 2)
+	int		check;
+
+	check = 0;
+	check = ft_check_args(ac, av);
+	if (check == 2)
 		return (0);
-	else if (ft_check_args(ac, av) == 1)
+	else if (check == 1)
 		return (1);
 	ft_create_checkerlst(av, a);
 	if (ft_check_lst(a) != 0)
